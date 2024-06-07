@@ -9,3 +9,4 @@ pnpm dev
 ## Resources
 
 - [Next-js-Boilerplate](https://github.com/ixartz/Next-js-Boilerplate)
+- 
