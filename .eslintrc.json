@@ -1,5 +1,9 @@
 {
-  "extends": ["airbnb-base", "next/core-web-vitals", "plugin:prettier/recommended"],
+  "extends": [
+    "airbnb-base",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -12,7 +16,12 @@
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx", "**/*.mts"],
-      "plugins": ["@typescript-eslint", "unused-imports", "tailwindcss", "simple-import-sort"],
+      "plugins": [
+        "@typescript-eslint",
+        "unused-imports",
+        "tailwindcss",
+        "simple-import-sort"
+      ],
       "extends": [
         "plugin:tailwindcss/recommended",
         "airbnb",
@@ -45,8 +54,16 @@
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
         "unused-imports/no-unused-imports": "error",
-        "unused-imports/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-        "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"]
+        "unused-imports/no-unused-vars": [
+          "error",
+          { "argsIgnorePattern": "^_" }
+        ],
+        "no-restricted-syntax": [
+          "error",
+          "ForInStatement",
+          "LabeledStatement",
+          "WithStatement"
+        ]
       }
     },
     {
