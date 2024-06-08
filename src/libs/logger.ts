@@ -14,7 +14,4 @@ const prodTransport = pino.transport({
   options: { sourceToken: env.LOGTAIL_SOURCE_TOKEN },
 });
 
-export const logger = pino(
-  { base: undefined },
-  isProd ? prodTransport : devTransport,
-);
+export default pino({ base: undefined }, isProd ? prodTransport : devTransport);
