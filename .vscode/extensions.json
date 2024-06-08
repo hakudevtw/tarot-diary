@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "mikestead.dotenv",
+    "bradlc.vscode-tailwindcss",
+    "vitest.explorer",
+    "yoavbls.pretty-ts-errors",
+    "ms-playwright.playwright",
+    "github.vscode-github-actions",
+    "lokalise.i18n-ally"
+    // "csstools.postcss",
+    // "humao.rest-client",
+  ]
+}

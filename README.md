@@ -8,7 +8,7 @@ pnpm dev
 
 ## Services
 
-- logger - [Better Stack](https://betterstack.com/logs)
+- Logger - [Better Stack](https://betterstack.com/logs)
 
 ## Resources
 

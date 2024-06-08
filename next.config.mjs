@@ -3,14 +3,16 @@ import { fileURLToPath } from 'node:url';
 
 import bundleAnalyzer from '@next/bundle-analyzer';
 import createJiti from 'jiti';
-
-// Import env here to validate during build
-const jiti = createJiti(fileURLToPath(import.meta.url));
-jiti('./src/libs/env');
+import createNextIntlPlugin from 'next-intl/plugin';
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 });
+
+const jiti = createJiti(fileURLToPath(import.meta.url));
+jiti('./src/libs/env'); // Import env here to validate during build
+
+const withNextIntl = createNextIntlPlugin('./src/libs/i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -19,4 +21,4 @@ const nextConfig = {
   },
 };
 
-export default withBundleAnalyzer(nextConfig);
+export default withBundleAnalyzer(withNextIntl(nextConfig));
